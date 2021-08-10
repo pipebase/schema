@@ -1,6 +1,6 @@
 YAML validation / auto complete in vscode for [`pipebase`] manifest
 ### Setup
-install [`YAML`] vscode extension, and config `.vscode/settings.json`
+install [`YAML`] vscode extension, and config `.vscode/settings.json` in working directory
 ```
 {
     "yaml.schemas": {
