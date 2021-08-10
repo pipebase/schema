@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "object.json",
+    "title": "object",
+    "description": "custom object",
+    "type": "object",
+    "properties": {
+        "ty": {
+            "description": "object type name",
+            "type": "string"
+        },
+        "metas": {
+            "description": "object metas",
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "meta/all.json#definitions/all"
+                    }
+                ]
+            }
+        },
+        "fields": {
+            "description": "object fields",
+            "type": "array",
+            "items": {
+                "$ref": "datafield.json"
+            }
+        }
+    },
+    "required": [ "ty", "fields" ],
+    "additionalProperties": false
+}

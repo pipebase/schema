@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/project.json",
+    "title": "projection",
+    "description": "projection meta",
+    "type": "object",
+    "properties": {
+        "project": {
+            "description": "projection meta",
+            "type": "object",
+            "properties": {
+                "input": {
+                    "description": "projection input type name",
+                    "type": "string"
+                },
+                "from": {
+                    "description": "projection input field name",
+                    "type": "string"
+                },
+                "expr": {
+                    "description": "projection expression",
+                    "type": "string"
+                },
+                "alias": {
+                    "description": "projection input alias",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "project" ],
+    "additionalProperties": false
+}

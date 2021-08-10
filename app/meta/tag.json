@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/tag.json",
+    "title": "derive",
+    "description": "attribute path",
+    "definitions": {
+        "tag": {
+            "enum": [
+                "Hash",
+                "Group",
+                "Order",
+                "Visit",
+                "Equal",
+                "Left",
+                "Right"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "tag": {
+            "type": "string",
+            "description": "attrbute path",
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/tag"
+                }
+            ]
+        }
+    },
+    "required": [ "tag" ],
+    "additionalProperties": false
+}

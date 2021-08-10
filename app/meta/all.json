@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/all.json",
+    "title": "all meta",
+    "description": "all meta",
+    "definitions": {
+        "all": {
+            "oneOf": [
+                {
+                    "$ref": "derive.json"
+                },
+                {
+                    "$ref": "tag.json"
+                },
+                {
+                    "$ref": "project.json"
+                },
+                {
+                    "$ref": "convert.json"
+                },
+                {
+                    "$ref": "filter.json"
+                },
+                {
+                    "$ref": "render.json"
+                },
+                {
+                    "$ref": "aggregate.json"
+                }
+            ]
+        }
+    }
+}

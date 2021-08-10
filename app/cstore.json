@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "cstore.json",
+    "title": "context store",
+    "description": "pipe runtime context store",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "context store name",
+            "type": "string"
+        },
+        "config": {
+            "description": "context store config",
+            "$ref": "cstore_config.json"
+        }
+    },
+    "required": [ "name", "config" ],
+    "additionalProperties": false
+}

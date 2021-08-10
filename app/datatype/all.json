@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/all.json",
+    "title": "all data type",
+    "description": "all data type",
+    "definitions": {
+        "all": {
+            "oneOf": [
+                {
+                    "$ref": "array.json"
+                },
+                {
+                    "$ref": "basic.json"
+                },
+                {
+                    "$ref": "box.json"
+                },
+                {
+                    "$ref": "hashmap.json"
+                },
+                {
+                    "$ref": "hashset.json"
+                },
+                {
+                    "$ref": "object.json"
+                },
+                {
+                    "$ref": "external_object.json"
+                },
+                {
+                    "$ref": "option.json"
+                },
+                {
+                    "$ref": "vec.json"
+                },
+                {
+                    "$ref": "pair.json"
+                },
+                {
+                    "$ref": "pairs.json"
+                },
+                {
+                    "$ref": "tuple.json"
+                }
+            ]
+        }
+    }
+}

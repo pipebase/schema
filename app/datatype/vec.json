@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/vec.json",
+    "title": "vec",
+    "description": "continous growable array type",
+    "type": "object",
+    "properties": {
+        "Vec": {
+            "description": "continous growable array type",
+            "type": "object",
+            "properties": {
+                "ty": {
+                    "description": "inner type",
+                    "oneOf": [
+                        {
+                            "$ref": "all.json#definitions/all"
+                        }
+                    ]
+                }
+            },
+            "required": [ "ty" ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

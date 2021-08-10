@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/object.json",
+    "title": "object",
+    "description": "custom object type",
+    "type": "object",
+    "properties": {
+        "Object": {
+            "description": "custom object type name",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

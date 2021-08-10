@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/basic.json",
+    "title": "basic data type",
+    "description": "basic data type",
+    "oneOf": [
+        {
+            "$ref": "#/definitions/basic"
+        }
+    ],
+    "definitions": {
+        "basic": {
+            "enum": [
+                "Boolean", 
+                "Character", 
+                "String", 
+                "Byte", 
+                "UnsignedByte", 
+                "Short", 
+                "UnsignedShort", 
+                "Integer",
+                "UnsignedInteger",
+                "Size",
+                "UnsignedSize",
+                "Long",
+                "UnsignedLong",
+                "LongLong",
+                "UnsignedLongLong",
+                "Float",
+                "Double",
+                "PathBuf",
+                "Count32",
+                "Averagef32",
+                "Booleans",
+                "Characters",
+                "Strings",
+                "Bytes",
+                "UnsignedBytes",
+                "Shorts",
+                "UnsignedShorts",
+                "Integers",
+                "UnsignedIntegers",
+                "Sizes",
+                "UnsignedSizes",
+                "Longs",
+                "UnsignedLongs",
+                "LongLongs",
+                "UnsignedLongLongs",
+                "Floats",
+                "Doubles",
+                "PathBufs",
+                "Count32s",
+                "Averagef32s"
+            ]
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/derive.json",
+    "title": "derive",
+    "description": "allow new items to be automatically generated for data structures",
+    "definitions": {
+        "derive": {
+            "enum": [
+                "Clone",
+                "Convert",
+                "Debug",
+                "Display",
+                "Serialize",
+                "Deserialize",
+                "Eq",
+                "Equal",
+                "PartialEq",
+                "Project",
+                "Filter",
+                "FieldAccept",
+                "HashedBy",
+                "OrderedBy",
+                "AggregateAs",
+                "GroupAs",
+                "LeftRight",
+                "Render",
+                "IntoAttributes"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "derives": {
+            "type": "array",
+            "description": "list of derive attributes",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/derive"
+                    }
+                ]
+            }
+        }
+    },
+    "required": [ "derives" ],
+    "additionalProperties": false
+}
