@@ -1,0 +1,83 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "pipe_config.json",
+    "title": "pipe config",
+    "description": "configuration",
+    "definitions": {
+        "pipebase": {
+            "enum": [
+                "InMemoryBagCollectorConfig",
+                "InMemorySetCollectorConfig",
+                "TextCollectorConfig",
+                "ContextPrinterConfig",
+                "PipeErrorPrinterConfig",
+                "PrinterConfig",
+                "LocalFilePathVisitorConfig",
+                "AddAggregatorConfig",
+                "ConversionConfig",
+                "EchoConfig",
+                "FieldVisitConfig",
+                "FileReaderConfig",
+                "FileWriterConfig",
+                "FilterMapConfig",
+                "OrderedGroupAddAggregatorConfig",
+                "ProjectionConfig",
+                "StringSplitterConfig",
+                "TopAggregatorConfig",
+                "UnorderedGroupAddAggregatorConfig"
+            ]
+        },
+        "pipeware": {
+            "enum": [
+                "WarpIngestionServerConfig",
+                "KafkaConsumerConfig",
+                "KubeLogReaderConfig",
+                "KubeEventReaderConfig",
+                "RedisSubscriberConfig",
+                "SqsMessageReceiverConfig",
+                "JsonSerConfig",
+                "JsonDeserConfig",
+                "CsvSerConfig",
+                "CsvDeserConfig",
+                "RedisUnorderedGroupAddAggregatorConfig",
+                "RocksDBUnorderedGroupAddAggregatorConfig",
+                "KafkaJsonRecordConverterConfig",
+                "ReqwestGetterConfig",
+                "ReqwestPosterConfig",
+                "ReqwestQueryConfig",
+                "CqlWriterConfig",
+                "PsqlWriterConfig",
+                "RedisStringWriterConfig",
+                "RedisPublisherConfig",
+                "KafkaProducerConfig",
+                "S3WriterConfig",
+                "MySQLWriterConfig",
+                "DynamoDBWriterConfig",
+                "SnsPublisherConfig"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "ty": {
+            "description": "config type",
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/pipebase"
+                },
+                {
+                    "$ref": "#/definitions/pipeware"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "path": {
+            "description": "pipe config file path",
+            "type": "string"
+        }
+    },
+    "required": [ "ty" ],
+    "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/filter.json",
+    "title": "filter",
+    "description": "filter meta",
+    "type": "object",
+    "properties": {
+        "filter": {
+            "description": "filter meta",
+            "type": "object",
+            "properties": {
+                "predicate": {
+                    "description": "filter predicate",
+                    "type": "string"
+                },
+                "alias": {
+                    "description": "filter input alias",
+                    "type": "string"
+                }
+            },
+            "required": [ "predicate" ],
+            "additionalProperties": false
+        }
+    },
+    "required": [ "convert" ],
+    "additionalProperties": false
+}

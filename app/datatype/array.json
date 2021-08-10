@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/array.json",
+    "title": "array",
+    "description": "fixed length array",
+    "type": "object",
+    "properties": {
+        "Array": {
+            "description": "fixed length array",
+            "type": "object",
+            "properties": {
+                "ty": {
+                    "description": "inner type",
+                    "oneOf": [
+                        {
+                            "$ref": "all.json#definitions/all"
+                        }
+                    ]
+                },
+                "len": {
+                    "description": "array length",
+                    "type": "integer"
+                }
+            },
+            "required": [ "ty", "len" ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

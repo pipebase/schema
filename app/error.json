@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "error.json",
+    "title": "error handler",
+    "description": "pipe runtime error handler",
+    "type": "object",
+    "properties": {
+        "config": {
+            "description": "error handler config",
+            "$ref": "error_config.json"
+        }
+    },
+    "required": [ "config" ],
+    "additionalProperties": false
+}

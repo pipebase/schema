@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "cstore_config.json",
+    "title": "context store config",
+    "description": "context store config",
+    "definitions": {
+        "pipebase": {
+            "enum": [
+                "ContextPrinterConfig"
+            ]
+        },
+        "pipeware": {
+            "enum": [
+                "WarpContextServerConfig"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "ty": {
+            "description": "config type",
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/pipebase"
+                },
+                {
+                    "$ref": "#/definitions/pipeware"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        "path": {
+            "description": "config file path",
+            "type": "string"
+        }
+    },
+    "required": [ "ty" ],
+    "additionalProperties": false
+}

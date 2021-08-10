@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/external_object.json",
+    "title": "external object",
+    "description": "object from external dependency",
+    "type": "object",
+    "properties": {
+        "ExternalObject": {
+            "description": "object from external dependency",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

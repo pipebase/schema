@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/render.json",
+    "title": "render",
+    "description": "render template with object fields",
+    "type": "object",
+    "properties": {
+        "render": {
+            "description": "render template with object fields",
+            "type": "object",
+            "properties": {
+                "template": {
+                    "description": "template",
+                    "type": "string"
+                },
+                "pos": {
+                    "description": "field position in template",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "render" ],
+    "additionalProperties": false
+}

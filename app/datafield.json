@@ -1,0 +1,38 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datafield.json",
+    "title": "data field",
+    "description": "data field",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "field name",
+            "type": "string"
+        },
+        "ty": {
+            "description": "field data type",
+            "oneOf": [
+                {
+                    "$ref": "datatype/all.json#definitions/all"
+                }
+            ]
+        },
+        "metas": {
+            "description": "field metas",
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "meta/all.json#definitions/all"
+                    }
+                ]
+            }
+        },
+        "is_public": {
+            "description": "field access level",
+            "type": "boolean"
+        }
+    },
+    "required": [ "ty" ],
+    "additionalProperties": false
+}

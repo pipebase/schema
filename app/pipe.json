@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "pipe.json",
+    "title": "pipe",
+    "description": "smallest runtime unit",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "pipe name in snake_case",
+            "type": "string"
+        },
+        "ty": {
+            "description": "pipe type",
+            "type": "string",
+            "enum": ["Listener", "Poller", "Mapper", "Collector", "Selector", "Exporter", "Streamer"]
+        },
+        "config": {
+            "description": "pipe configuration",
+            "$ref": "pipe_config.json"
+        },
+        "upstreams": {
+            "description": "list of upstream pipe names",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "output": {
+            "description": "output data type",
+            "oneOf": [
+                {
+                    "$ref": "datatype/all.json#definitions/all"
+                }
+            ]
+        }
+    },
+    "required": [ "name", "ty" ],
+    "additionalProperties": false
+}

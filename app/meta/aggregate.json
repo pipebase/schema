@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/aggregate.json",
+    "title": "aggregation meta",
+    "description": "aggregation meta",
+    "definitions": {
+        "basic": {
+            "enum": [
+                "Top", 
+                "Sum"
+            ]
+        },
+        "count32": {
+            "type": "object",
+            "properties": {
+                "Count32": {
+                    "type": "string"
+                }
+            }
+        },
+        "avgf32": {
+            "type": "object",
+            "properties": {
+                "Avgf32": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "type": "object",
+    "properties": {
+        "agg": {
+            "oneOf": [
+                {
+                    "$ref": "#/definitions/basic"
+                },
+                {
+                    "$ref": "#/definitions/count32"
+                },
+                {
+                    "$ref": "#/definitions/avgf32"
+                }
+            ]
+        }
+    },
+    "additionalProperties": false
+}

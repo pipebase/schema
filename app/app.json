@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "app.json",
+    "title": "app",
+    "description": "data integration app manifest",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "app name",
+            "type": "string"
+        },
+        "dependencies": {
+            "description": "list of app dependencies",
+            "type": "array",
+            "items": {
+                "$ref": "dependency.json"
+            }
+        },
+        "pipes": {
+            "description": "list of pipe",
+            "type": "array",
+            "items": {
+                "$ref": "pipe.json"
+            }
+        },
+        "objects": {
+            "description": "list of object",
+            "type": "array",
+            "items": {
+                "$ref": "object.json"
+            }
+        },
+        "cstores": {
+            "description": "list of context stores",
+            "type": "array",
+            "items": {
+                "$ref": "cstore.json"
+            }
+        },
+        "error": {
+            "description": "error handler",
+            "$ref": "error.json"
+        }
+    },
+    "required": [ "name", "pipes" ],
+    "additionalProperties": false
+}

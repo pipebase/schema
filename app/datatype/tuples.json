@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/tuple.json",
+    "title": "tuple",
+    "description": "vec of tuple",
+    "type": "object",
+    "properties": {
+        "Tuples": {
+            "description": "vec of tuple",
+            "type": "object",
+            "properties": {
+                "tys": {
+                    "description": "inner type",
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "$ref": "all.json#definitions/all"
+                            }
+                        ] 
+                    }
+                }
+            },
+            "required": [ "tys" ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

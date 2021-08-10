@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "dependency.json",
+    "title": "dependency",
+    "description": "app dependency",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "crate name",
+            "type": "string"
+        },
+        "version": {
+            "description": "crate version",
+            "oneOf": [
+                { "type": "number" },
+                { "type": "string" }
+            ]
+        },
+        "path": {
+            "description": "local crate path",
+            "type": "string"
+        },
+        "git": {
+            "description": "git repository url",
+            "type": "string"
+        },
+        "tag": {
+            "description": "git repository tag",
+            "type": "string"
+        },
+        "features": {
+            "description": "cargo features",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "package": {
+            "description": "package in cargo workspace",
+            "type": "string"
+        },
+        "modules": {
+            "description": "list of used modules",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [ "name", "modules" ],
+    "additionalProperties": false
+}

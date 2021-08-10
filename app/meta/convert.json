@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/convert.json",
+    "title": "conversion",
+    "description": "conversion meta",
+    "type": "object",
+    "properties": {
+        "convert": {
+            "description": "conversion meta",
+            "type": "object",
+            "properties": {
+                "input": {
+                    "description": "conversion input type name",
+                    "type": "string"
+                },
+                "from": {
+                    "description": "conversion input field name",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "convert" ],
+    "additionalProperties": false
+}
