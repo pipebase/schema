@@ -4,10 +4,42 @@
     "title": "dependency",
     "description": "app dependency",
     "type": "object",
+    "definitions": {
+        "all": {
+            "enum": [
+                "pipebase",
+                "pipebytes",
+                "pipecql",
+                "pipecsv",
+                "pipedynamodb",
+                "pipejson",
+                "pipekafka",
+                "pipekube",
+                "pipemysql",
+                "pipepsql",
+                "piperedis",
+                "pipereqwest",
+                "piperocksdb",
+                "pipes3",
+                "pipesns",
+                "pipesqs",
+                "pipewarp",
+                "serde",
+                "tokio"
+            ]
+        }
+    },
     "properties": {
         "name": {
             "description": "crate name",
-            "type": "string"
+            "anyOf": [
+                {
+                    "$ref": "#/definitions/all"
+                },
+                {
+                    "type": "string"
+                }
+            ]
         },
         "version": {
             "description": "crate version",
