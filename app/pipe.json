@@ -34,6 +34,11 @@
                     "$ref": "datatype/all.json#definitions/all"
                 }
             ]
+        },
+        "buffer": {
+            "description": "pipe channel buffer capacity",
+            "type": "integer",
+            "minimum": 0
         }
     },
     "required": [ "name", "ty" ],
