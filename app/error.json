@@ -8,6 +8,11 @@
         "config": {
             "description": "error handler config",
             "$ref": "error_config.json"
+        },
+        "buffer": {
+            "description": "error handler channel buffer size",
+            "type": "integer",
+            "minimum": 0
         }
     },
     "required": [ "config" ],
