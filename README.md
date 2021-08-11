@@ -11,6 +11,7 @@ install [`YAML`] vscode extension, and config `.vscode/settings.json` in working
 ```
 
 ### Demo
+in demo, fix four missing fields (red error lines) with auto complete
 ![screencast](https://raw.githubusercontent.com/pipebase/schema/main/.github/assets/demo.gif)
 
 [`pipebase`]: https://github.com/pipebase/pipebase
