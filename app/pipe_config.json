@@ -42,6 +42,7 @@
                 "RedisUnorderedGroupAddAggregatorConfig",
                 "RocksDBUnorderedGroupAddAggregatorConfig",
                 "KafkaJsonRecordConverterConfig",
+                "KafkaUnsignedBytesRecordConverterConfig",
                 "ReqwestGetterConfig",
                 "ReqwestPosterConfig",
                 "ReqwestQueryConfig",
