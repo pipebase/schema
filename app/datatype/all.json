@@ -25,6 +25,9 @@
                     "$ref": "object.json"
                 },
                 {
+                    "$ref": "objects.json"
+                },
+                {
                     "$ref": "external_object.json"
                 },
                 {
