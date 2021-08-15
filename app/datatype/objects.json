@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/objects.json",
+    "title": "objects",
+    "description": "a vec of custom objects",
+    "type": "object",
+    "properties": {
+        "Objects": {
+            "description": "custom object type name",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
