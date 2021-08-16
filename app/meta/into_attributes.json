@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/into_attributes.json",
+    "title": "into attributes",
+    "description": "convert object into attributes",
+    "type": "object",
+    "properties": {
+        "attribute": {
+            "description": "convert object into attributes",
+            "type": "object",
+            "properties": {
+                "alias": {
+                    "description": "attribute field alias",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "attribute" ],
+    "additionalProperties": false
+}
