@@ -26,6 +26,9 @@
                 },
                 {
                     "$ref": "aggregate.json"
+                },
+                {
+                    "$ref": "into_attributes.json"
                 }
             ]
         }
