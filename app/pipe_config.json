@@ -54,6 +54,7 @@
                 "KafkaProducerConfig",
                 "S3WriterConfig",
                 "MySQLWriterConfig",
+                "MySQLPreparedWriterConfig",
                 "DynamoDBWriterConfig",
                 "SnsPublisherConfig"
             ]
