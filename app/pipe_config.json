@@ -47,6 +47,7 @@
                 "ReqwestPosterConfig",
                 "ReqwestQueryConfig",
                 "CqlWriterConfig",
+                "CqlPreparedWriterConfig",
                 "PsqlWriterConfig",
                 "PsqlPreparedWriterConfig",
                 "RedisStringWriterConfig",
