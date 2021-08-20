@@ -11,7 +11,11 @@
             "properties": {
                 "input": {
                     "description": "conversion input type name",
-                    "type": "string"
+                    "oneOf": [
+                        {
+                            "$ref": "../datatype/all.json#definitions/all"
+                        }
+                    ]
                 },
                 "from": {
                     "description": "conversion input field name",
