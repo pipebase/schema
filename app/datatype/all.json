@@ -31,6 +31,9 @@
                     "$ref": "external_object.json"
                 },
                 {
+                    "$ref": "external_objects.json"
+                },
+                {
                     "$ref": "option.json"
                 },
                 {

@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "datatype/external_objects.json",
+    "title": "external objects",
+    "description": "vec of external object",
+    "type": "object",
+    "properties": {
+        "ExternalObjects": {
+            "description": "vec of external object",
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
