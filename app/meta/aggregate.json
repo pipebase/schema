@@ -30,7 +30,7 @@
     "type": "object",
     "properties": {
         "agg": {
-            "oneOf": [
+            "anyOf": [
                 {
                     "$ref": "#/definitions/basic"
                 },
