@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "meta/serde.json",
+    "title": "serde",
+    "description": "serde field meta",
+    "type": "object",
+    "properties": {
+        "serde": {
+            "description": "serde field meta",
+            "type": "object",
+            "properties": {
+                "with": {
+                    "description": "serde with",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": [ "serde" ],
+    "additionalProperties": false
+}
