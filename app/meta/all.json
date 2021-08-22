@@ -29,6 +29,9 @@
                 },
                 {
                     "$ref": "into_attributes.json"
+                },
+                {
+                    "$ref": "serde.json"
                 }
             ]
         }
