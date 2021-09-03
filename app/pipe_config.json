@@ -63,7 +63,9 @@
                 "DynamoDBWriterConfig",
                 "SnsPublisherConfig",
                 "MqttPublisherConfig",
-                "MqttSubscriberConfig"
+                "MqttSubscriberConfig",
+                "AmqpConsumerConfig",
+                "AmqpPublisherConfig"
             ]
         }
     },
