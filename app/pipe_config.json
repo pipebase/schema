@@ -10,8 +10,6 @@
                 "InMemorySetCollectorConfig",
                 "InMemoryWindowCollectorConfig",
                 "TextCollectorConfig",
-                "ContextPrinterConfig",
-                "PipeErrorPrinterConfig",
                 "PrinterConfig",
                 "LocalFilePathVisitorConfig",
                 "AddAggregatorConfig",
