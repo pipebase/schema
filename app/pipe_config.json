@@ -23,18 +23,27 @@
                 "ProjectionConfig",
                 "StringSplitterConfig",
                 "TopAggregatorConfig",
-                "UnorderedGroupAddAggregatorConfig"
+                "UnorderedGroupAddAggregatorConfig",
+                "DefaultHashSelectorConfig",
+                "RandomSelectorConfig",
+                "RoundRobinSelectorConfig",
+                "FileSplitReaderConfig",
+                "FileLineReaderConfig",
+                "IteratorReaderConfig"
             ]
         },
         "pipeware": {
             "enum": [
-                "AvroSerConfig",
-                "AvroDeserConfig",
                 "WarpIngestionServerConfig",
                 "KubeLogReaderConfig",
                 "KubeEventReaderConfig",
                 "RedisSubscriberConfig",
                 "SqsMessageReceiverConfig",
+                "KafkaConsumerConfig",
+                "MqttSubscriberConfig",
+                "AmqpConsumerConfig",
+                "AvroSerConfig",
+                "AvroDeserConfig",
                 "JsonSerConfig",
                 "JsonDeserConfig",
                 "JsonRecordSerConfig",
@@ -43,8 +52,8 @@
                 "RedisUnorderedGroupAddAggregatorConfig",
                 "RocksDBUnorderedGroupAddAggregatorConfig",
                 "ReqwestGetterConfig",
-                "ReqwestPosterConfig",
                 "ReqwestQueryConfig",
+                "ReqwestPosterConfig",
                 "CqlWriterConfig",
                 "CqlPreparedWriterConfig",
                 "PsqlWriterConfig",
@@ -52,7 +61,6 @@
                 "RedisStringWriterConfig",
                 "RedisStringBatchWriterConfig",
                 "RedisPublisherConfig",
-                "KafkaConsumerConfig",
                 "KafkaProducerConfig",
                 "KafkaPartitionedProducerConfig",
                 "S3WriterConfig",
@@ -61,8 +69,6 @@
                 "DynamoDBWriterConfig",
                 "SnsPublisherConfig",
                 "MqttPublisherConfig",
-                "MqttSubscriberConfig",
-                "AmqpConsumerConfig",
                 "AmqpPublisherConfig"
             ]
         }
