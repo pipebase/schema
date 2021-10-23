@@ -1,3 +1,8 @@
+<div align="center">
+<img src=".github/assets/banner.png"></img>
+</div>
+<br />
+
 YAML validation / auto complete in vscode for [`pipebase`] manifest
 
 ### Setup
