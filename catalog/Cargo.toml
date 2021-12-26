@@ -1,0 +1,12 @@
+[package]
+name = "catalog"
+version = "0.1.0"
+edition = "2018"
+authors = ["Li Yu <li.yu.sh0211@gmail.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/pipebase/schema"
+description = "lib for catalog schema validation"
+
+[dependencies]
+anyhow = "1.0.52"
+pipebuilder_common = "0.2.0"
