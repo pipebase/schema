@@ -8,5 +8,4 @@ repository = "https://github.com/pipebase/schema"
 description = "lib for catalog schema validation"
 
 [dependencies]
-anyhow = "1.0.52"
 pipebuilder_common = "0.2.0"

@@ -1,4 +1,4 @@
-use pipebuilder_common::{Catalog, CatalogSchemaMetadataKey, CatalogSchemaValidator};
+use pipebuilder_common::{Catalog, CatalogSchemaMetadataKey, CatalogSchemaValidator, Result};
 
 const MOCK_CATALOG_NAME: &str = "mock_catalog";
 const MOCK_NAMESPACE: &str = "mock";
@@ -30,7 +30,7 @@ where
         self
     }
 
-    pub fn build(self) -> anyhow::Result<Catalog> {
+    pub fn build(self) -> Result<Catalog> {
         let path = self.path.expect("path undefined");
         let yml = std::fs::read_to_string(path)?;
         Ok(Catalog {
@@ -74,12 +74,9 @@ where
         self
     }
 
-    pub fn build(self) -> anyhow::Result<CatalogSchemaValidator> {
+    pub fn build(self) -> Result<CatalogSchemaValidator> {
         let path = self.path.expect("path undefined");
         let json = std::fs::read(path)?;
-        // TODO: FROM pipebuilder_common::Error to anyhow::Error
-        let validator =
-            CatalogSchemaValidator::from_buffer(&json).expect("invalid catalog json schema");
-        Ok(validator)
+        CatalogSchemaValidator::from_buffer(&json)
     }
 }
